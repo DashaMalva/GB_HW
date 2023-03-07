@@ -26,6 +26,16 @@ body {
 .controls__btn {
   background-color: white;
   border: none;
+  cursor: pointer;
+  
+}
+
+.controls__btn:hover {
+  opacity: 80%;
+}
+
+.controls__btn:active {
+  transform: translateY(4px);
 }
 
 .controls__btn img {
