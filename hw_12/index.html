@@ -11,7 +11,7 @@
 
 <body>
   <div class="player">
-    <video class="video" src="./video/TSU_854x480.mp4"></video>
+    <video class="video" src="./video/videoplayback.mp4"></video>
     <div class="controls">
       <input type="range" id="timing" value="0" step="0.01">
       <label for="timing"><span class="current_time">0</span></label>
@@ -19,9 +19,20 @@
         <button class="controls__btn playBtn"><img src="./img/play.svg" alt="play"></button>
         <button class="controls__btn pauseBtn"><img src="./img/pause.svg" alt="pause"></button>
         <button class="controls__btn stopBtn"><img src="./img/stop.svg" alt="stop"></button>
+        <div class="volume">
+          <img src="./img/volume.svg" alt="volume" class="volume__img">
+          <input type="range" id="controls__volume" min="0" max="1" step="0.2" list="vol-settings">
+          <datalist id="vol-settings">
+            <option value="0"></option>
+            <option value="0.2"></option>
+            <option value="0.4"></option>
+            <option value="0.6"></option>
+            <option value="0.8"></option>
+            <option value="1"></option>
+          </datalist>
+        </div>
       </div>
-      <label for="controls__volume">Громкость</label>
-      <input type="range" id="controls__volume" min="0" max="1" step="0.01">
+
     </div>
   </div>
 

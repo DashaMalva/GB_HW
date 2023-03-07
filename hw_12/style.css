@@ -20,7 +20,16 @@ body {
 }
 
 .controls {
-  width: 250px;
+  width: 500px;
+}
+
+#timing {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
 }
 
 .controls__btn {
@@ -40,4 +49,18 @@ body {
 
 .controls__btn img {
   width: 50px;
+}
+.volume {
+  display: flex;
+}
+.volume:hover #controls__volume {
+  display: block;
+}
+
+#controls__volume {
+  display: none;
+}
+
+.volume__img {
+  width:  50px;
 }
