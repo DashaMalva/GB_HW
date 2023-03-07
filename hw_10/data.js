@@ -1,0 +1,1 @@
+const data = `[{"gender":"male","name":{"title":"Mr","first":"Rubén","last":"Santana"}, "phone":"937-075-514","picture": "https://randomuser.me/api/portraits/med/men/50.jpg"}, {"gender":"female","name":{"title":"Mrs","first":"Inaya","last":"Renard"}, "phone":"05-96-09-54-69", "picture":"https://randomuser.me/api/portraits/med/women/19.jpg"}]`

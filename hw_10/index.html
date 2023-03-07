@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 10</title>
+  <style>
+    .user {
+      width: 250px;
+      border: solid 1px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="users"></div>
+
+  <script src="./data.js"></script>
+  <script>
+    const usersData = JSON.parse(data);
+
+    usersData.forEach(element => {
+      const users = document.querySelector('.users');
+
+      const user = document.createElement('div');
+      user.classList.add('user');
+
+      const userImage = document.createElement('img');
+      userImage.classList.add('user__image');
+      userImage.src = element.picture;
+      userImage.alt = 'user photo';
+
+      const userDesc = document.createElement('p');
+      userDesc.classList.add('user__desc');
+      userDesc.textContent = `${element.name.first} ${element.name.last}`;
+
+      const userPhone = document.createElement('p');
+      userPhone.classList.add('user__phone');
+      userPhone.textContent = element.phone;
+
+      users.appendChild(user);
+      user.appendChild(userImage);
+      user.appendChild(userDesc);
+      user.appendChild(userPhone);
+
+    });
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
